@@ -1,7 +1,25 @@
 import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import { useEffect } from 'react';
+import HomeView from "./views/HomeView";
+import lenis from "./utils/lenis";
+import link from "./utils/link";
+
 
 const App = () => {
-    return <div>App</div>;
+    useEffect(() =>{
+        lenis();
+        link();
+    }, [])
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomeView />} />
+            </Routes>
+
+        
+        </BrowserRouter> 
+    );
 };
 
 export default App;
