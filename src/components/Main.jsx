@@ -1,9 +1,5 @@
-import React, { Children } from 'react'
-import Contact from './Contact'
-import Port from './Port'
-import Site from './Site'
-import Skill from './Skill'
-import Intro from './Intro'
+import React from 'react'
+
 
 
 
